@@ -1,9 +1,9 @@
 const textInput = document.querySelector("#name-input");
 const output = document.querySelector("#name-output");
 
-textInput.addEventListener("input", changeGreeting);
+textInput.addEventListener("input", onTextInputChange);
 
-function changeGreeting(event) {
+function onTextInputChange (event) {
     if (event.currentTarget.value.trim() === "") {
     output.textContent = "Anonymous";
     } else {
