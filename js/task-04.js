@@ -4,6 +4,10 @@ const valueEl = document.querySelector("#value");
 
 var counterValue = Number(valueEl.textContent);
 
+decrementBtnEl.addEventListener("click", onDecrementBtnElClick);
+incrementBtnEl.addEventListener("click", onIncrementBtnElClick);
+
+
 const onDecrementBtnElClick = () => {
   counterValue -= 1;
   valueEl.innerHTML = `${counterValue}`;
@@ -17,5 +21,3 @@ const onIncrementBtnElClick = () => {
   console.log("Increment button was clicked and the value was incremented by 1");
 };
 
-decrementBtnEl.addEventListener("click", onDecrementBtnElClick);
-incrementBtnEl.addEventListener("click", onIncrementBtnElClick);
